@@ -5,7 +5,7 @@ app = Flask(__name__, template_folder='client/templates')
 
 @app.route('/')
 def home():
-    usuarios = listar_usuarios()
+    usuarios = nolistar_usuarios()
     return render_template('index.html', usuarios=usuarios)
 
 @app.route('/about')
